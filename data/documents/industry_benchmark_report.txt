@@ -1,0 +1,30 @@
+HALDEN RESEARCH GROUP - 2025 SAAS WORKFORCE AND CUSTOMER BENCHMARKS
+Sample: 340 mid-market B2B software companies (200-1,000 employees).
+
+1. EMPLOYEE ENGAGEMENT BENCHMARKS
+- Median overall engagement: 76% favorable. Top quartile: 82%.
+- Median eNPS: +28. Top quartile: +40.
+- Median voluntary turnover: 13%. Software engineering roles: 15%.
+- Median favorable score for career growth: 66%.
+- Median favorable score for compensation: 68%.
+- Median favorable score for workload and work-life balance: 70%.
+- Median favorable score for manager relationship: 78%.
+- Median favorable score for flexibility: 74%.
+
+2. WHAT DRIVES ENGAGEMENT IN TOP PERFORMERS
+Companies in the top quartile typically publish transparent promotion criteria, run promotion cycles at least twice a year, benchmark compensation every 12 months, cap on-call rotations, and offer individual learning budgets of $1,000 or more. Companies with annual-only promotion cycles show an average of 6 points lower career growth scores.
+
+3. CUSTOMER BENCHMARKS
+- Median annual customer churn (revenue-based, B2B SaaS mid-market): 8%. Top quartile: 5%.
+- Median net revenue retention: 108%. Top quartile: 118%.
+- Median customer satisfaction on support cases: 4.4 out of 5.
+- Median time to first value after onboarding: 30 days.
+
+4. SALES AND GROWTH BENCHMARKS
+- Median annual revenue growth: 16%.
+- Median sales cycle for mid-market deals: 74 days.
+- Companies that tie part of sales compensation to retention or renewal show 2 points lower churn on average.
+- Companies with structured onboarding (milestone-based) report 30% fewer early-life churn events.
+
+5. NOTE ON USE
+Benchmarks are medians and vary by segment. Comparisons should account for company size and customer mix.

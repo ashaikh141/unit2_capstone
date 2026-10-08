@@ -1,0 +1,32 @@
+MERIDIAN SYSTEMS - ENGINEERING CODE REVIEW PROCESS
+Owner: VP of Engineering. Applies to all production repositories.
+
+1. PRINCIPLES
+Code review exists to improve quality, share knowledge, and catch defects early. Reviews are collaborative, not adversarial. Reviewers critique the code, never the author.
+
+2. WHEN REVIEW IS REQUIRED
+Every change to a production repository must go through a pull request (PR). Direct commits to the main branch are blocked by branch protection rules.
+
+3. AUTHOR RESPONSIBILITIES
+- Keep PRs small, ideally under 400 changed lines.
+- Write a clear description covering what changed, why, and how it was tested.
+- Link the related ticket.
+- Confirm that automated checks pass before requesting review.
+
+4. AUTOMATED CHECKS
+Before human review, CI must pass: unit tests, linting, static analysis, dependency vulnerability scanning, and a minimum of 80% test coverage on changed files.
+
+5. REVIEWER ASSIGNMENT AND APPROVALS
+Low-risk changes (documentation, configuration, minor UI) require 1 approval. Changes to core services, payments, authentication, or data pipelines require 2 approvals, including one from a code owner. Changes touching security-sensitive code also require sign-off from a Security Champion.
+
+6. REVIEW SERVICE LEVEL
+Reviewers provide a first response within 1 business day. Urgent fixes are flagged with the "hotfix" label and reviewed within 2 hours. Median review turnaround is tracked on the engineering dashboard; the 2024 median was 6 hours.
+
+7. REVIEW CHECKLIST
+Reviewers check for correctness, readability, test quality, error handling, performance impact, security issues (input validation, secrets, injection risks), backward compatibility, and documentation updates.
+
+8. HANDLING DISAGREEMENT
+If author and reviewer disagree, they discuss synchronously. If unresolved after one day, the tech lead decides.
+
+9. MERGING
+Authors merge after all approvals and passing checks, using squash merge. Deployments follow the standard release pipeline with automatic rollback on failed health checks.

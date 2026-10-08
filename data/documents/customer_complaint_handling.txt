@@ -1,0 +1,31 @@
+MERIDIAN SYSTEMS - CUSTOMER COMPLAINT HANDLING PROCEDURE
+Owner: Head of Customer Support. Version 2.4.
+
+1. PURPOSE
+Every complaint is an opportunity to retain a customer and improve the product. This procedure ensures complaints are handled quickly, fairly, and consistently.
+
+2. HOW COMPLAINTS ARRIVE
+Complaints may arrive via support portal, email, phone, account managers, or social media. Whoever receives a complaint must log it in the support system the same day.
+
+3. ACKNOWLEDGEMENT
+Customers receive an acknowledgement within 4 business hours containing a case number, the assigned owner, and the expected next update time.
+
+4. SEVERITY TIERS AND RESOLUTION TARGETS
+- Critical (service outage, data issue, major billing error): resolution target 24 hours, immediate escalation to a support manager.
+- High (key feature failing, repeated unresolved issue): 3 business days.
+- Standard (usability, minor billing, general dissatisfaction): 7 business days.
+
+5. ESCALATION
+Unresolved High complaints escalate to the Support Manager after 2 days. Complaints from accounts above $100,000 annual contract value are copied to the Customer Success Director and the account executive. Any complaint mentioning cancellation or legal action goes to the VP of Customer Success immediately.
+
+6. RESOLUTION AUTHORITY
+Support agents may issue credits up to $250. Support managers may approve up to $2,500. Larger amounts require VP approval.
+
+7. ROOT CAUSE ANALYSIS
+Critical and repeat complaints require a written root cause analysis within 5 business days, shared with the customer when appropriate. Findings feed into the monthly product and support review.
+
+8. FOLLOW-UP
+Seven days after closure, the customer receives a satisfaction survey. Low scores (below 3 out of 5) trigger a personal call from a manager.
+
+9. COMPLAINT TRENDS (Q4 2025)
+Customer satisfaction on resolved cases averaged 4.3 out of 5. The top complaint categories were onboarding delays (31%), billing errors (22%), and slow support response in the EMEA region (18%). The EMEA response issue is being addressed by adding a second support shift.

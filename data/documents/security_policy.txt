@@ -1,0 +1,29 @@
+MERIDIAN SYSTEMS - INFORMATION SECURITY POLICY (Version 3.2)
+Owner: Chief Information Security Officer. Last reviewed: January 2025.
+
+1. PURPOSE AND SCOPE
+This policy defines how Meridian Systems protects company, customer, and employee information. It applies to all employees, contractors, and vendors with access to company systems.
+
+2. ACCESS CONTROL
+Access follows the principle of least privilege. Multi-factor authentication (MFA) is mandatory for all corporate accounts, VPN, cloud consoles, and source code repositories. Managers review team access rights quarterly. Access is revoked within 24 hours of an employee's departure.
+
+3. PASSWORDS
+Passwords must be at least 14 characters. All employees must use the company-approved password manager. Passwords may not be shared or reused across systems.
+
+4. DATA CLASSIFICATION
+Data is classified into four levels: Public, Internal, Confidential, and Restricted. Customer personal data, financial records, and credentials are Restricted. Restricted data must be encrypted at rest with AES-256 and in transit with TLS 1.2 or higher, and may not be stored on personal devices or sent through unapproved channels.
+
+5. DEVICE SECURITY
+Company laptops use full-disk encryption, automatic screen lock after 5 minutes, and managed endpoint protection. Lost or stolen devices must be reported to IT Security within 1 hour.
+
+6. INCIDENT RESPONSE
+Any suspected security incident must be reported to security@meridian.example within 1 hour of discovery. Incidents are rated Severity 1 (confirmed data breach or outage), Severity 2 (contained compromise), or Severity 3 (policy violation). Severity 1 incidents trigger the Incident Response Team immediately. Affected customers and regulators are notified within 72 hours where legally required. A post-incident review is completed within 10 business days.
+
+7. VENDOR MANAGEMENT
+All third-party vendors handling Confidential or Restricted data must complete a security assessment and sign a data processing agreement before onboarding. Vendors are reassessed annually.
+
+8. TRAINING AND COMPLIANCE
+All employees complete security awareness training at onboarding and annually. Phishing simulations run quarterly; employees who fail two consecutive simulations receive additional coaching. Meridian maintains SOC 2 Type II and ISO 27001 certifications, with external audits each year.
+
+9. ENFORCEMENT
+Violations may result in disciplinary action up to and including termination.

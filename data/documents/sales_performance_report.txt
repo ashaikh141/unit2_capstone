@@ -1,0 +1,26 @@
+MERIDIAN SYSTEMS - FY2025 SALES PERFORMANCE REVIEW
+Prepared by Sales Operations for the executive team.
+
+1. SUMMARY
+FY2025 revenue reached $48.6M, up 14% from $42.6M in FY2024. This fell slightly short of the 16% growth target and sits just below the industry median growth of 16%. Q4 revenue was $14.2M, the strongest quarter of the year.
+
+2. REGIONAL PERFORMANCE (Q4)
+- North America: $6.9M, 5% above plan. Strong enterprise renewals and expansions.
+- EMEA: $4.1M, 3% below plan. New logo wins were solid, but slow support response times contributed to two delayed renewals.
+- APAC: $2.4M, 8% above plan, the fastest-growing region at 31% year over year.
+- LATAM: $0.8M, 12% below plan. The region has a small team and a long sales cycle.
+
+3. SALES CYCLE AND PIPELINE
+The average mid-market sales cycle was 81 days, compared to an industry median of 74 days. Pipeline coverage entering FY2026 is 3.1x, against a target of 3.5x. Win rate on qualified opportunities was 24%.
+
+4. DISCOUNTING
+Average discount on new deals was 17%. Deals discounted more than 20% showed higher first-year churn (16%) than deals discounted less than 10% (7%). Discount approval authority currently sits with regional sales directors.
+
+5. COMPENSATION AND INCENTIVES
+Sales compensation is based 100% on new bookings and expansion. There is no component tied to renewal or customer retention. In the employee survey, Sales raised concerns about quotas being adjusted mid-year.
+
+6. CHURN CONTEXT
+Annual revenue churn was 11.2%, compared to an industry median of 8%. Customer Success attributes roughly 40% of churn to poor onboarding and 25% to over-promised features in the sales process.
+
+7. FY2026 PRIORITIES
+Improve pipeline coverage, shorten sales cycles, reduce deep discounting, and work more closely with Customer Success on handoffs and renewal planning.

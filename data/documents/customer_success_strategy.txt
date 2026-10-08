@@ -1,0 +1,34 @@
+MERIDIAN SYSTEMS - CUSTOMER SUCCESS STRATEGY AND PLAYBOOK
+Owner: VP of Customer Success. FY2026 edition.
+
+1. MISSION
+Ensure every customer achieves measurable value quickly, renews with confidence, and expands over time.
+
+2. KEY METRICS (FY2025)
+- Annual revenue churn: 11.2% (target: 8%).
+- Net revenue retention: 102% (industry median 108%).
+- Customer satisfaction: 4.3 out of 5.
+- Average time to first value: 47 days (target: 30 days).
+
+3. ONBOARDING PROGRAM
+Every new customer receives a named onboarding manager and a milestone-based plan covering kickoff, integration, training, and go-live. Customers above $50,000 annual contract value receive a dedicated technical resource. Onboarding delays are the single largest source of early churn and the top complaint category.
+
+4. CUSTOMER HEALTH SCORING
+Each account has a health score based on product usage, support ticket trends, executive engagement, and survey responses. Accounts scoring red trigger an action plan within 5 business days and a review by the Customer Success Director.
+
+5. ENGAGEMENT CADENCE
+- Enterprise accounts: quarterly business reviews (QBRs) with executive sponsors.
+- Mid-market accounts: semi-annual reviews and monthly check-ins.
+- Small accounts: digital programs and webinars.
+
+6. RENEWAL MANAGEMENT
+Renewal conversations begin 120 days before contract end. Customer Success owns renewal forecasting, with Sales supporting commercial terms. Renewals at risk are escalated to the VP of Customer Success.
+
+7. SALES-TO-SUCCESS HANDOFF
+A structured handoff document is required for every new deal, listing the customer's goals, promised capabilities, and stakeholders. Audits show handoff documents were incomplete for 35% of deals in FY2025, leading to mismatched expectations.
+
+8. FY2026 INITIATIVES
+- Reduce onboarding time to 30 days through templates and automation.
+- Introduce a retention component into sales compensation.
+- Require Customer Success review of discounts above 20% and of non-standard commitments.
+- Expand support capacity in EMEA to protect renewals.
