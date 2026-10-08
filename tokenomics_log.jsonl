@@ -6,3 +6,5 @@
 {"timestamp": "2026-10-08T14:02:22.801788", "query": "How do we handle customer complaints?", "agent": "qualitative", "input_tokens": 2853, "output_tokens": 1352, "cost_usd": 0.016448, "cost_per_1000_queries": 16.45}
 {"timestamp": "2026-10-08T14:02:42.959413", "query": "Show me monthly revenue trends", "agent": "manager-classifier", "input_tokens": 83, "output_tokens": 242, "cost_usd": 0.002302, "cost_per_1000_queries": 2.3}
 {"timestamp": "2026-10-08T14:02:44.981472", "query": "Show me monthly revenue trends", "agent": "quantitative", "input_tokens": 289, "output_tokens": 295, "cost_usd": 0.003088, "cost_per_1000_queries": 3.09}
+{"timestamp": "2026-10-08T14:21:35.610662", "query": "What is our customer churn rate?", "agent": "manager-classifier", "input_tokens": 85, "output_tokens": 167, "cost_usd": 0.001631, "cost_per_1000_queries": 1.63}
+{"timestamp": "2026-10-08T14:21:41.986537", "query": "What is our customer churn rate?", "agent": "quantitative", "input_tokens": 387, "output_tokens": 1517, "cost_usd": 0.014233, "cost_per_1000_queries": 14.23}
