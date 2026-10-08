@@ -42,13 +42,30 @@ Note: this project uses Gemini (`gemini-3.5-flash`) through `llm.py`, so "the mo
    - **Tokenomics observation:** the quantitative call used 387 input tokens but 1,517 output tokens (about $0.014), far more output than a one-line SQL statement needs. Gemini's hidden "thinking" tokens are billed as output, so the real cost of a short answer is higher than its length suggests. I count them in `llm.py` so the log reflects true cost.
    - The console also showed an SDK notice about automatic function calling. It is informational, not an error, and I did not act on it.
 
-### Test 3: Qualitative or multi-agent query
+### Test 3: Quantitative query that failed validation (the case I did not immediately trust)
 
-1. **Query submitted:** [e.g. `What is our company's security policy?`]
-2. **What the model returned:** [PASTE the answer]
-3. **What the validation layer flagged:** [PASTE the sources cited line and any warning]
-4. **Accepted / changed / why:** [Open one of the cited .txt files and check that the claim really appears there. Write what you checked.]
+1. **Query submitted:** `Compare Q4 performance across regions`
 
-### Case I did not immediately trust
+2. **What the model returned (first run):** The manager routed the query to the quantitative agent, but the "SQL" it returned was not a query. It was a fragment of the model's own reasoning that stopped mid-sentence:
+```
+   Wait, maybe just `SUM(revenue)` and `SUM(units_sold)` is enough for "performance". I will select `region`, `SUM(revenue)` as
+```
 
-[Describe the one case, the exact output that made you doubt it, how you checked it, and what you decided or changed.]
+3. **What the validation layer flagged:** `⚠️ VALIDATION WARNING: SQL validation status: FAILED`, with the message `Query blocked: Only SELECT queries are permitted`. `validate_sql` stopped the text before it reached the database, so nothing was executed.
+
+4. **What I accepted, what I changed, and why:**
+   - **Accepted** the validator's block. The output was not a valid query, so refusing it was correct.
+   - **Diagnosed the cause** from the tokenomics line: the quantitative call used 1,020 output tokens against a `max_tokens` limit of 1,024 (the classifier call also came close, at 245 of 256). Gemini's hidden "thinking" tokens count toward that limit, so the model ran out of budget before it wrote the actual query, and the visible text was a truncated reasoning fragment.
+   - **Changed** `llm.py` to use `max(max_tokens, 4096)` as the output limit, so thinking tokens no longer crowd out the answer.
+   - **Re-ran** the same query. This time the model produced a valid query:
+```sql
+     SELECT region, SUM(revenue) AS total_revenue, SUM(units_sold) AS total_units_sold
+     FROM sales
+     WHERE strftime('%Y-%m', date) IN ('2025-10','2025-11', '2025-12')
+     GROUP BY region ORDER BY total_revenue DESC;
+```
+     and answered with North America at $6,900,000 (8,105 units), EMEA at $4,100,000 (4,695 units), APAC at $2,400,000 (2,799 units), and LATAM at $800,000 (946 units). No validation warning was raised.
+   - **Verified** the answer directly against SQLite with `SELECT region, SUM(revenue), SUM(units_sold) FROM sales WHERE strftime('%m', date) IN ('10','11','12') GROUP BY region ORDER BY 2 DESC`. The result matched the model's figures exactly, and the revenue totals add up to $14.2M, the Q4 total the database was seeded with.
+   - **Noted the cost:** the re-run used 521 input and 1,998 output tokens (about $0.019) for the quantitative call. Most of that output is thinking tokens, so the higher limit made this query more expensive than the one-line SQL suggests.
+
+5. **Why I did not trust this output, and how I resolved it:** The first failure looked like a model reasoning error, but the real cause was a token budget problem in my own wrapper code. The validator correctly blocked the output, yet it only said the query was not a SELECT. Reading the token counts is what revealed the true cause. Without validating the SQL before execution, the app would have tried to run a sentence as a database query. After raising the limit and re-running, I confirmed the answer against the database before accepting it.
